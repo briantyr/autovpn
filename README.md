@@ -1,5 +1,13 @@
 # Overview
 
+### Special THANKS to [ttlequals0](https://github.com/ttlequals0) for the excellent work he's done on this project.  I owe you pizza. :) ###
+
+#### UDPATED TODO's by [me](https://github.com/briantyr): ####
+  * Being highly familiar with Python and boto, I plan on adding additional features that is useful in my specific use-case, which is low-cost demonstration of Infrastructure as Code with HashiCorp's Terraform & Consul in an (obviously) AWS environment.
+  * Integrating with additional automation tools.
+  * Tweak the pay as you go configuration for my specific business needs.
+  * Python rocks.
+
 Script that allows the easy creation of OpenVPN endpoints in any AWS region.  To create a VPN endpoint is done with a single command takes ~3 minutes. It will create a VPC with proper security groups. It spins up a tagged ec2  instance  and configures OpenVPN software. Once instance is configured an OpenVPN configuration file is downloaded and ready to use. There is also functionality to see which instances are running in which region and ability to terminate the instance when done. Additional functionality includes specifying instance type, generate ssh keypairs, specify custom ami,  change login user and more to come. 
 
 [![asciicast](https://asciinema.org/a/102869.png)](https://asciinema.org/a/102869)
@@ -29,7 +37,7 @@ Installation:
 
 1. Ensure dependencies are all installed.
 2. Clone repo to system.
-  <pre><code>git clone https://github.com/ttlequals0/autovpn.git</code></pre>
+  <pre><code>git clone https://github.com/briantyr/autovpn.gitt</code></pre>
 3. To create SSH keypair execute autovpn with -G and -r options for AWS region of choice. (optional)	
    NOTE: Make sure to add new key to your ssh-agent.
 	<pre><addr>./autovpn -G -r us-east-1</addr></pre>
